@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  background-color: #f2ebe3;
+}
+
+body {
+  justify-content: center;
+  display: grid;
+  max-width: 37rem;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+  font-family: "Montserrat";
+  padding: 15px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-desktop img {
+  border-top-left-radius: 0.55rem;
+  border-end-start-radius: 0.55rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-mobile {
+  display: none;
+}
+
+.card-description {
+  display: grid;
+  border-top-right-radius: 0.55rem;
+  border-end-end-radius: 0.55rem;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.card-text {
+  display: grid;
+  gap: 10px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+.title-description {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  line-height: 1;
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+}
+
+.actual-price {
+  color: rgb(86, 140, 119);
+  font-family: "Fraunces";
+  font-size: 2rem;
+}
+
+.discount-price {
+  color: hsl(228, 12%, 48%);
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+.buy-button {
+  background-color: rgb(86, 140, 119);
+  border-radius: 8px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  align-self: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.buy-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 375px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card-description {
+    border-top-right-radius: initial;
+    border-bottom-left-radius: 0.55rem;
+  }
+  .image-desktop {
+    display: none;
+  }
+  .image-mobile {
+    display: initial;
+  }
+
+  .image-mobile img {
+    border-top-left-radius: 0.55rem;
+    border-top-right-radius: 0.55rem;
+    height: 100%;
+    object-fit: cover;
+  }
+}
