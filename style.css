@@ -21,7 +21,7 @@ body {
   width: 100vw;
   align-content: center;
   font-family: "Montserrat";
-  padding: 15px;
+  padding: .9375rem;
 }
 
 .card-container {
@@ -45,18 +45,18 @@ body {
   border-top-right-radius: 0.55rem;
   border-end-end-radius: 0.55rem;
   background-color: #fff;
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 .card-text {
   display: grid;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .text {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  color: hsl(228, 12%, 48%);
+  color: #6b718a;
   line-height: 1.5;
 }
 
@@ -64,34 +64,34 @@ body {
   font-family: "Fraunces";
   font-size: 2rem;
   line-height: 1;
-  color: hsl(212, 21%, 14%);
-  margin-bottom: 10px;
+  color: #1c232b;
+  margin-bottom: 0.625rem;
 }
 
 .price {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
   justify-content: start;
   align-items: center;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .actual-price {
-  color: rgb(86, 140, 119);
+  color: #568c77;
   font-family: "Fraunces";
   font-size: 2rem;
 }
 
 .discount-price {
-  color: hsl(228, 12%, 48%);
+  color: #6c7289;
   font-weight: 200;
   font-size: 0.8rem;
   text-decoration: line-through;
 }
 
 .buy-button {
-  background-color: rgb(86, 140, 119);
-  border-radius: 8px;
+  background-color: #568c77;
+  border-radius: 0.5rem;
   display: flex;
   /* align-items: center; */
   justify-content: center;
@@ -103,6 +103,10 @@ body {
 .buy-button a {
   text-decoration: none;
   color: #fff;
+}
+
+.buy-button:hover {
+  background-color: #447562;
 }
 
 @media (max-width: 600px) {
